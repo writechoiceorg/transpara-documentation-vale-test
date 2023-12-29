@@ -18,3 +18,6 @@ jobs:
           # fail_on_error: true
           # added, diff_context, file, nofilter
           # filter_mode: nofilter
+      - name: Set merge status on failure
+        if: failure()
+        run: echo "::error::Vale check failed. Please fix the issues before merging." && exit 1
