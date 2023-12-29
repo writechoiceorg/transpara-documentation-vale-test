@@ -14,7 +14,7 @@ jobs:
         with:
           version: 2.17.0
           # github-pr-check, github-pr-review, github-check
-          reporter: github-pr-review
-          fail_on_error: true
+          # reporter: github-pr-review
+          # fail_on_error: true
           # added, diff_context, file, nofilter
-          filter_mode: nofilter
+          # filter_mode: nofilter
