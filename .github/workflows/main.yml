@@ -1,11 +1,11 @@
-name: reviewdog
+name: vale-validation
 on:
   pull_request:
     #types: [opened, reopened, synchronize]
 
 jobs:
   vale:
-    name: runner / vale
+    name: runner-vale
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -32,6 +32,3 @@ jobs:
 
       - name: Validate the syntax
         run: ./vale --config=.vale.ini *.md
-      - name: Set merge status on failure
-        if: failure()
-        run: echo "::error::Vale check failed. Please fix the issues before merging." && exit 1
