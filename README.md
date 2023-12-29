@@ -98,5 +98,3 @@ If you prefer to leave the comments behind and perform modifications to the file
     - Click **Commit Changes**. A new commit will be created and everyone who has worked on the branch will be notified.
 
 ![Edit file](/assets/edit-file.gif "Edit file")
-
-transpara
