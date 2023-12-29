@@ -30,8 +30,8 @@ jobs:
           tar -xvzf vale.tar.gz vale
           rm vale.tar.gz
 
-      - name: Validate the syntax
-        run: ./vale --config=.vale.ini *.md
+      #- name: Validate the syntax
+      #  run: ./vale --config=.vale.ini *.md
 
       - name: Validate the syntax
-        run: ./vale --config=.vale.ini *.mdx
+        run: ./vale .
