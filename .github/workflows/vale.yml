@@ -1,7 +1,7 @@
 name: reviewdog
 on:
   pull_request:
-    types: [opened, reopened, synchronize]
+    #types: [opened, reopened, synchronize]
 
 jobs:
   vale:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: errata-ai/vale-action@reviewdog
-        id: check
+        # id: check
         with:
           version: 2.17.0
           # github-pr-check, github-pr-review, github-check
